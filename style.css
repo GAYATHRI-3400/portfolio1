@@ -1,0 +1,830 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9F9F9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.profile-card {
+    background-color: #FFE4E1;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profession {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.social-icons a {
+    margin: 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1E90FF;
+    transform: scale(1.1);
+}
+
+.intro-section {
+    max-width: 600px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.resume {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.portfolio {
+    border: 2px solid #333;
+    color: #333;
+}
+
+.resume:hover, .portfolio:hover {
+    background-color: #1E90FF;
+    color: #FFF;
+}
+
+.details {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Skills Section */
+/* Skills Section */
+#skills {
+    padding: 50px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.skill-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.skill-card .skill-bar {
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.skill-card .skill-level {
+    height: 100%;
+    background-color: #1E90FF;
+    border-radius: 5px;
+}
+
+.skill-card .skill-percent {
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.skill-icon {
+    font-size: 55px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.skill-card:hover .skill-icon {
+    color: #1E90FF;
+}
+
+.html {
+    background-color: #ff7043;
+}
+
+.css {
+    background-color: #1976d2;
+}
+
+.javascript {
+    background-color: #fbc02d;
+}
+
+.react {
+    background-color: #61dafb;
+}
+
+.nodejs {
+    background-color: #8cc84b;
+}
+
+/* Skill Bar */
+.skill-bar {
+    height: 12px; /* Increased height for better visibility */
+    border-radius: 6px;
+    background-color: #f1f1f1; /* Light background for the skill bar */
+}
+
+.skill-level {
+    transition: width 0.5s ease-in-out; /* Smooth transition for skill level */
+}
+
+
+.html {
+    background-color: #ff7043;
+}
+
+.css {
+    background-color: #1976d2;
+}
+
+.javascript {
+    background-color: #fbc02d;
+}
+
+.react {
+    background-color: #61dafb;
+}
+
+.nodejs {
+    background-color: #8cc84b;
+}
+
+/* Projects Section */
+/* Project Section */
+#projects {
+    padding: 50px;
+    background-color: #F5F5F5;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-box:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-box h3 {
+    margin-top: 15px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.project-btn {
+    background-color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #1E90FF;
+    color: #FFF;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #555555;
+}
+
+/* Bottom Navigation Bar */
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.bottom-nav .nav-item {
+    color: #FFFFFF;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bottom-nav .nav-item:hover {
+    color: #FFD700;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1E90FF;
+    color: #FFF;
+}
+
+/* Social Media Icons in Contact Section */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+/* About Section */
+
+
+/* About Section */
+.about-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-box strong {
+    color: #333;
+}
+
+/* Timeline Styling */
+.timeline-item {
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item small {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.timeline-item ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #555;
+}
+
+.timeline-item ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Work Experience Section (Horizontal Layout) */
+/* Work Experience Section */
+.work-experience-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.work-experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.work-experience-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.work-experience-grid {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    padding-bottom: 1rem; /* Space for scrollbar */
+}
+
+.work-experience-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 500px; /* Minimum width for each box */
+    flex: 0 0 auto; /* Prevents flex items from shrinking */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-experience-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.work-experience-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.work-experience-box small {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.work-experience-box ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #555;
+}
+
+.work-experience-box ul li {
+    margin-bottom: 0.5rem;
+}
+
+.work-experience-box strong {
+    color: #333;
+}
+
+/* Dark Theme Adjustments */
+.dark-theme .work-experience-section {
+    background-color: #1f1f1f;
+}
+
+.dark-theme .work-experience-container h2 {
+    color: #e0e0e0;
+}
+
+.dark-theme .work-experience-box {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-theme .work-experience-box h3 {
+    color: #ffd700; /* Golden color for headings */
+}
+
+.dark-theme .work-experience-box small {
+    color: #bb86fc; /* Rose gold for timeline details */
+}
+
+.dark-theme .work-experience-box ul li {
+    color: #e0e0e0;
+}
+
+.dark-theme .work-experience-box strong {
+    color: #ffd700; /* Golden color for strong text */
+}
+
+/* Dark Theme Adjustments */
+.dark-theme .work-experience-section {
+    background-color: #1f1f1f;
+}
+
+.dark-theme .work-experience-container h2 {
+    color: #e0e0e0;
+}
+
+.dark-theme .work-experience-box {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-theme .work-experience-box h3 {
+    color: #ffd700; /* Golden color for headings */
+}
+
+.dark-theme .work-experience-box small {
+    color: #bb86fc; /* Rose gold for timeline details */
+}
+
+.dark-theme .work-experience-box ul li {
+    color: #e0e0e0;
+}
+
+.dark-theme .work-experience-box strong {
+    color: #ffd700; /* Golden color for strong text */
+}
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme nav {
+    background-color: #1f1f1f;
+}
+
+.dark-theme nav ul li a {
+    color: #e0e0e0;
+}
+
+.dark-theme nav ul li a:hover {
+    color: #bb86fc;
+}
+
+.dark-theme .theme-toggle {
+    color: #e0e0e0;
+}
+
+.dark-theme .theme-toggle:hover {
+    color: #bb86fc;
+}
+
+.dark-theme .profile-card,
+.dark-theme .intro-section,
+.dark-theme .about-box,
+.dark-theme .work-experience-box {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-theme .profile-card h2,
+.dark-theme .intro-section h1,
+.dark-theme .about-box h3,
+.dark-theme .work-experience-box h4 {
+    color: #ffd700;
+}
+
+.dark-theme .social-icons a,
+.dark-theme .buttons .btn {
+    color: #e0e0e0;
+}
+
+.dark-theme .social-icons a:hover,
+.dark-theme .buttons .btn:hover {
+    color: #bb86fc;
+}
+
+.dark-theme .timeline-item h4,
+.dark-theme .timeline-item small {
+    color: #bb86fc;
+}
+
+.dark-theme .timeline-item p,
+.dark-theme .timeline-item ul li {
+    color: #e0e0e0;
+}
+/* Skill Bar */
+.skills .skill-item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.skills .skill-item span {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.skills .skill-bar {
+    flex: 3;
+    height: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.skills .progress {
+    height: 100%;
+    background-color: #ffd700;
+    border-radius: 5px;
+}
+
+/* Overlay Styling */
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ /* Dark Theme Styles */
+    body.dark-theme {
+        background-color: #121212; /* Dark background */
+        color: #e0e0e0; /* Light text for readability */
+    }
+
+    .dark-theme nav {
+        background-color: #1f1f1f; /* Slightly lighter dark background for nav */
+    }
+
+    .dark-theme nav a {
+        color: #bb86fc; /* Rose gold for links */
+    }
+
+    .dark-theme nav a:hover {
+        color: #ffd700; /* Golden for hover effect */
+    }
+
+    .dark-theme .profile-card, 
+    .dark-theme .intro-section, 
+    .dark-theme .about-box, 
+    .dark-theme .skill-card, 
+    .dark-theme .project-box, 
+    .dark-theme footer {
+        background-color: #1f1f1f; /* Dark background for cards */
+        color: #e0e0e0; /* Light text for readability */
+        border: 1px solid #333; /* Subtle border for separation */
+    }
+
+    .dark-theme .profile-card h2,
+    .dark-theme .intro-section h1,
+    .dark-theme .about-box h3,
+    .dark-theme .skill-card h3,
+    .dark-theme .project-box h3,
+    .dark-theme footer h2 {
+        color: #ffd700; /* Golden for headings */
+    }
+
+    .dark-theme .social-icons a,
+    .dark-theme .contact-icons a {
+        color: #bb86fc; /* Rose gold for icons */
+    }
+
+    .dark-theme .social-icons a:hover,
+    .dark-theme .contact-icons a:hover {
+        color: #ffd700; /* Golden for hover effect */
+    }
+
+    .dark-theme .buttons .btn {
+        background-color: #bb86fc; /* Rose gold for buttons */
+        color: #121212; /* Dark text for buttons */
+    }
+
+    .dark-theme .buttons .btn:hover {
+        background-color: #ffd700; /* Golden for button hover */
+        color: #121212; /* Dark text for buttons */
+    }
+
+    .dark-theme .skill-bar {
+        background-color: #333; /* Dark background for skill bars */
+    }
+
+    .dark-theme .skill-level {
+        background-color: #bb86fc; /* Rose gold for skill level */
+    }
+
+    .dark-theme .project-links .project-btn {
+        background-color: #bb86fc; /* Rose gold for project buttons */
+        color: #121212; /* Dark text for buttons */
+    }
+
+    .dark-theme .project-links .project-btn:hover {
+        background-color: #ffd700; /* Golden for button hover */
+        color: #121212; /* Dark text for buttons */
+    }
+
+    .dark-theme form input,
+    .dark-theme form textarea {
+        background-color: #1f1f1f; /* Dark background for form inputs */
+        color: #e0e0e0; /* Light text for inputs */
+        border: 1px solid #333; /* Subtle border for inputs */
+    }
+
+    .dark-theme form button {
+        background-color: #bb86fc; /* Rose gold for submit button */
+        color: #121212; /* Dark text for button */
+    }
+
+    .dark-theme form button:hover {
+        background-color: #ffd700; /* Golden for button hover */
+        color: #121212; /* Dark text for button */
+    }
